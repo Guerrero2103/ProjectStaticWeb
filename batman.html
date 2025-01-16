@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dark Knight Rises</title>
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+
+    <h1>Bekijk de beste details op de website Filmitto.com</h1>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Inloggen</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="movie-detail">
+        <h2>The Dark Knight Rises</h2>
+        <img src="Batman.jpg" alt="Batman" width="400" height="400">
+        <h2>Film Details</h2>
+        <h3>Genre: Actie, Drama, Superheldenfilm, Scienceficion en Spanning.</h3>
+        <p><strong>Plot:</strong> Batman verschijnt na acht jaar in ballingschap te hebben geleefd om terrorist 
+            Bane te bestrijden. Hij wordt hierin bijgestaan door Catwoman, maar het blijft 
+            de vraag of zij wel te vertrouwen is.</p>
+        <h4>Cast:</h4>
+        <ul>
+            <li>Christian Bale als Batman / Bruce Wayne</li>
+            <li>Gary Oldman als Commissioner Gordon</li>
+            <li>Tom Hardy als Bane</li>
+            
+        </ul>
+
+
+        <div class="review-section">
+            <h2>Laat een beoordeling achter</h2>
+            <form action="verwerk_beoordeling.php" method="POST">
+                
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" placeholder="Voer je naam in" required>
+                
+                
+                <label for="rating">Beoordeling:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️ - 5 sterren</option>
+                    <option value="4">⭐️⭐️⭐️⭐️ - 4 sterren</option>
+                    <option value="3">⭐️⭐️⭐️ - 3 sterren</option>
+                    <option value="2">⭐️⭐️ - 2 sterren</option>
+                    <option value="1">⭐️ - 1 ster</option>
+                </select>
+                
+                
+                <label for="feedback">Jouw feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Schrijf hier je feedback" required></textarea>
+                
+                
+                <button type="submit">Verstuur beoordeling</button>
+            </form>
+        </div>
+        
+
+        
+        
+
+        
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Filmitto </p>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers One</title>
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+
+    <h1>Bekijk de beste details op de website Filmitto.com</h1>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Inloggen</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="movie-detail">
+        <h2>Transformers One</h2>
+        <img src="Transformers.jpg" alt="Transformers One" width="400" height="400">
+        <h2>Film Details</h2>
+        <h3>Genre: Animatie, Actie, Avontuur, Scienceficion.</h3>
+        <p><strong>Plot:</strong> Wees getuige van het onvertelde oorsprongsverhaal van Orion Pax 
+            (jonge Optimus Prime) en D-16 (jonge Megatron). Zie hoe ze, ooit 
+            wapenbroeders, veranderen in gezworen vijanden en voorgoed het lot 
+            van Cybertron veranderen.</p>
+        <h4>Cast:</h4>
+        <ul>
+            <li>Chris Hemsworth als Orion Pax / Optimus Prime</li>
+            <li>Brian Tyree Henry als D-16 / Megatron</li>
+            <li>Scarlett Johansson als Elita -1</li>
+            
+        </ul>
+
+
+        <div class="review-section">
+            <h2>Laat een beoordeling achter</h2>
+            <form action="verwerk_beoordeling.php" method="POST">
+                
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" placeholder="Voer je naam in" required>
+                
+                
+                <label for="rating">Beoordeling:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️ - 5 sterren</option>
+                    <option value="4">⭐️⭐️⭐️⭐️ - 4 sterren</option>
+                    <option value="3">⭐️⭐️⭐️ - 3 sterren</option>
+                    <option value="2">⭐️⭐️ - 2 sterren</option>
+                    <option value="1">⭐️ - 1 ster</option>
+                </select>
+                
+                
+                <label for="feedback">Jouw feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Schrijf hier je feedback" required></textarea>
+                
+                
+                <button type="submit">Verstuur beoordeling</button>
+            </form>
+        </div>
+        
+
+        
+        
+
+        
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Filmitto </p>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Toevoegen / Aanpassen</title>
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+    <h1>Film Toevoegen / Aanpassen</h1>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Inloggen</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="toe-ver.html">Filmbeheer</a></li>
+        </ul>
+    </nav>
+
+    
+    <form action="toe-ver.html" method="POST">
+        <label for="film-titel">Titel:</label><br>
+        <input type="text" id="film-titel" name="titel" required><br><br>
+
+        <label for="film-beschrijving">Beschrijving:</label><br>
+        <textarea id="film-beschrijving" name="beschrijving" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="film-genre">Genre:</label><br>
+        <select id="film-genre" name="genre" required>
+            <option value="actie">Actie</option>
+            <option value="drama">Drama</option>
+            <option value="komedie">Komedie</option>
+            <option value="horror">Horror</option>
+            <option value="documentaire">Documentaire</option>
+        </select><br><br>
+
+        <label for="film-jaartal">Jaar:</label><br>
+        <input type="number" id="film-jaartal" name="jaartal" min="1900" max="2099" required><br><br>
+
+        <label for="film-afbeelding">Afbeelding (URL):</label><br>
+        <input type="url" id="film-afbeelding" name="afbeelding" placeholder="https://voorbeeld.com/afbeelding.jpg"><br><br>
+
+        <button type="submit">Opslaan</button>
+    </form>
+
+
+
+    <div class="stars left">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+    <div class="stars right">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+
+</body>
+</html>
